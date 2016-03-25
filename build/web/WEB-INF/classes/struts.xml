@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name = "msg" namespace = "/" extends = "struts-default">
+        <action name = "Form" class = "com.Input.RegistrationSystem.FormAction">
+            <result name = "save_success">/RegistrationForm.jsp</result>
+            <result name = "insert_success">/welcome.jsp</result>
+            <result name = "insert_error">/error.jsp</result>
+            <result name = "save_prepare_success">/SaveSession.jsp?method=0</result>
+            <result name = "save_error">/error.jsp</result>
+            <result name = "clear_success" type="redirect">/RegistrationForm.jsp</result>
+            <result name = "clear_error">/error.jsp</result>
+            <result name = "input">/RegistrationForm.jsp</result>
+        </action>
+    </package>
+</struts>
+

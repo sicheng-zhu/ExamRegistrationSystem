@@ -1,0 +1,196 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+    <field name="HospitalName">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>
+    </field>
+    
+    <field name="ExamYear">
+        <field-validator type="required">
+            <message key="errors.required" />
+        </field-validator>
+        <field-validator type="int">
+            <param name="min">2000</param>
+            <param name="max">9999</param>
+            <message key="errors.range"/>
+        </field-validator>
+    </field>
+    
+    <field name="SubjectName">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="RegistrationTimes">
+            <field-validator type="required">
+                <message key="errors.required" />
+            </field-validator>
+            <field-validator type="int">
+                <param name="min">0</param>
+                <param name="max">2</param>
+                <message key="最多2次"/>
+            </field-validator>        
+    </field>
+    
+    <field name="StudtName">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="Sex">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="StudentID">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="StudentType">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="IssusOrgOfChiefResidentCert">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="ChiefResidentMonth">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>
+        <field-validator type="int">
+            <param name="min">0</param>
+            <param name="max">100</param>
+            <message key="errors.range"/>
+        </field-validator>       
+    </field>
+    
+    <field name="AttendingPhysicianYear">
+            <field-validator type="required">
+                <message key="errors.required" />
+            </field-validator>
+            <field-validator type="int">
+                <param name="min">0</param>
+                <param name="max">100</param>
+                <message key="errors.range"/>
+            </field-validator>        
+    </field>
+    
+    <field name="DoctorPhone">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="Level">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="GraduationYear">
+            <field-validator type="required">
+                <message key="errors.required" />
+            </field-validator>
+            <field-validator type="int">
+                <param name="min">1949</param>
+                <param name="max">9999</param>
+                <message key="errors.range"/>
+            </field-validator>        
+    </field>
+    
+    <field name="GraduationUniversity">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="FirstStageCertificationIssueDate">
+       <field-validator type="date">
+            <param name="min">1949-01-01</param>
+            <param name="max">9999-12-31</param>
+            <message>First stage certification issue date should be between ${min} and ${max}</message>
+        </field-validator>
+        
+    </field>
+    
+    <field name="FirstStageSpeciality">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="IssueGovernmentAgency">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="PaperTitle">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="IssueTime">
+       <field-validator type="date">
+            <param name="min">1949-01-01</param>
+            <param name="max">9999-12-31</param>
+            <message>Paper issue date should be between ${min} and ${max}</message>
+       </field-validator>
+    </field>
+    
+    <field name="IssuePublicationName">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="IssuePublicationNumber">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="EmployerForAPOrCurrWithSecCert">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="errors.required" />
+        </field-validator>        
+    </field>
+    
+    <field name="StartingEmploymentDate">
+       <field-validator type="date">
+            <param name="min">1949-01-01</param>
+            <param name="max">9999-12-31</param>
+            <message>Starting employment date should be between ${min} and ${max}</message>
+       </field-validator>        
+    </field>
+</validators>
